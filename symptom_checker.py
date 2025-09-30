@@ -1,5 +1,5 @@
 from openai import OpenAI
-from model.openai_llm import get_completion
+from openai_llm import get_completion
 import os
 
 
@@ -109,3 +109,4 @@ Respond in a friendly and supportive tone, even if you're uncertain. Use plain, 
 """
 
     return get_completion(prompt)
+
