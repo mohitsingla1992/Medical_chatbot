@@ -5,11 +5,11 @@ import pytesseract
 import fitz  # PyMuPDF for PDFs
 import re
 
-from backend.report_handler import summarize_report
-from backend.symptom_checker import check_symptoms
-from backend.rag_engine5 import chatbot_interaction
-from backend.rag_engine5 import ask_medical_question
-from backend.rag_engine5 import get_medication_info
+from report_handler import summarize_report
+from symptom_checker import check_symptoms
+from rag_engine5 import chatbot_interaction
+from rag_engine5 import ask_medical_question
+from rag_engine5 import get_medication_info
 
 # Tesseract config
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -255,3 +255,4 @@ with tab5:
                 st.markdown(info)
             except Exception as e:
                 st.error(f"❌ Failed to get medication info: {e}")
+
