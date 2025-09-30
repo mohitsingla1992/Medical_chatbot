@@ -1,4 +1,4 @@
-from model.openai_llm import get_completion
+from openai_llm import get_completion
 
 def summarize_report(report_text):
     prompt = f"""
@@ -17,4 +17,5 @@ def summarize_report(report_text):
     Provide the output in a clear structured format.
     """
     return get_completion(prompt)
+
 
