@@ -2,7 +2,7 @@
 import streamlit as st
 from PIL import Image
 import pytesseract
-import fitz  # PyMuPDF for PDFs
+#import fitz  # PyMuPDF for PDFs
 import re
 
 from report_handler import summarize_report
@@ -255,4 +255,5 @@ with tab5:
                 st.markdown(info)
             except Exception as e:
                 st.error(f"❌ Failed to get medication info: {e}")
+
 
