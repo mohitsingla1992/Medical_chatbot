@@ -42,7 +42,7 @@ st.markdown("""
 
 
 #st.image("images/images.png", caption="Medical Assistant", use_container_width=True)
-st.image("images/images.png", use_container_width=False, width=200) 
+st.image("images.png", use_container_width=False, width=200) 
 st.header("🩺 AI Medical Assistant Chatbot")
 
 # Load and display logo in sidebar
@@ -255,5 +255,6 @@ with tab5:
                 st.markdown(info)
             except Exception as e:
                 st.error(f"❌ Failed to get medication info: {e}")
+
 
 
